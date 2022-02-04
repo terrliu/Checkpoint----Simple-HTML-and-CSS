@@ -42,7 +42,13 @@ header{
 }
 
 .nav_links li a:hover {
-    color: #436EE8
+    color: #436EE8;
+    background-color: #436EE8;
+}
+
+.nav_links li:active{
+    background-color: red;
+    font-weight: bold;
 }
 
 button {
@@ -116,7 +122,8 @@ img:hover{
 .album img {
     width: 33.33%;
     margin-right: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     float: left;
     border: solid black 1px;
     padding: 2px;
@@ -126,6 +133,26 @@ img:hover{
 	border: dashed;
 	transition: 0.5s ease-in-out;
 }
+
+.album-3{
+    margin-top: 100px;
+}
+.album-3 img {
+    width: 33.33%;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    float: left;
+    border: solid black 1px;
+    padding: 2px;
+}
+
+.album-3 img:hover{
+	filter:grayscale();
+	border: dashed;
+	transition: 0.5s ease-in-out;
+}
+
 .album-2 img {
     width: 33.33%;
     margin-left: 40px;
@@ -152,7 +179,8 @@ img:hover{
     line-height: 150%;
 	padding: 10px;
     text-align: left;
-    margin: 5px;
+    margin-top: 100px;
+    margin-left: 0px  ;
 }
 
 .text-music h2{
@@ -166,23 +194,15 @@ img:hover{
     margin-top: 100px;
 }
 
-.album-3{
-    margin-top: 200px;
-}
-.album-3 img {
-    width: 33.33%;
-    margin-left: 40px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    float: right;
+
+.album-4 img {
+    width: 25%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    float: left;
     border: solid black 1px;
     padding: 2px;
-}
-
-.album-3 img:hover{
-	filter:grayscale();
-	border: dashed;
-	transition: 0.5s ease-in-out;
 }
 
 .cards{
@@ -213,3 +233,13 @@ img:hover{
     padding: 15px;
     background-color:gray;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
